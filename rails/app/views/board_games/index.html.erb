@@ -1,0 +1,36 @@
+<script>
+window.webkit.messageHandlers.nativeApp.postMessage({
+  name: "ActionButton",
+  path: "/board_games/new",
+  icon: "plus"
+});
+</script>
+<p id="notice"><%= notice %></p>
+
+<h1>Board Games</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Players</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @board_games.each do |board_game| %>
+      <tr>
+        <td><%= board_game.name %></td>
+        <td><%= board_game.players %></td>
+        <td><%= link_to 'Show', board_game %></td>
+        <td><%= link_to 'Edit', edit_board_game_path(board_game) %></td>
+        <td><%= link_to 'Destroy', board_game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Board Game', new_board_game_path %>

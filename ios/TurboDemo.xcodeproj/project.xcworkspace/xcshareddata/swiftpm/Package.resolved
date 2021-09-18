@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "HTTP Client",
+        "repositoryURL": "https://github.com/joemasilotti/HTTP-Client",
+        "state": {
+          "branch": "main",
+          "revision": "d9bce6f66e41f3527668064b29377249048f4b12",
+          "version": null
+        }
+      },
+      {
+        "package": "KeychainAccess",
+        "repositoryURL": "https://github.com/kishikawakatsumi/KeychainAccess",
+        "state": {
+          "branch": null,
+          "revision": "84e546727d66f1adc5439debad16270d0fdd04e7",
+          "version": "4.2.2"
+        }
+      },
+      {
+        "package": "Turbo",
+        "repositoryURL": "https://github.com/hotwired/turbo-ios",
+        "state": {
+          "branch": null,
+          "revision": "e1aed038e523a8a09949a145b8bd9613e425ca08",
+          "version": "7.0.0-rc.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

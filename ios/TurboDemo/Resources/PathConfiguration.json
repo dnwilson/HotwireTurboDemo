@@ -1,0 +1,28 @@
+{
+  "rules": [
+    {
+      "patterns": [
+        "/new$"
+      ],
+      "properties": {
+        "presentation": "modal"
+      }
+    },
+    {
+      "patterns": [
+        "/sign_in$"
+      ],
+      "properties": {
+        "controller": "login"
+      }
+    },
+    {
+      "patterns": [
+        "/numbers"
+      ],
+      "properties": {
+        "controller": "numbers"
+      }
+    }
+  ]
+}

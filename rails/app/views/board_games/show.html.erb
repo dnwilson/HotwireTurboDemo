@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @board_game.name %>
+</p>
+
+<p>
+  <strong>Players:</strong>
+  <%= @board_game.players %>
+</p>
+
+<%= link_to 'Edit', edit_board_game_path(@board_game) %> |
+<%= link_to 'Back', board_games_path %>
